@@ -8,7 +8,7 @@ import ServerActions from './actions/ServerActions';
 const API = {
   fetchPokemon(number){
     // 'GET METHOD MAKES THE HTTP REQUEST'
-    $.get(`http://pokeapi.co/api/v2/pokemon/${number}`,(data,status)=>{
+    $.get(`https://pokeapi.co/api/v2/pokemon/${number}`,(data,status)=>{
       console.log('status:',status);
       console.log('data:',data);
       ServerActions.receivePokemon(data);
@@ -22,7 +22,7 @@ const API = {
     });
   },
   projectMe(id){
-     $.get(`http://pokeapi.co/api/v2/pokemon/${id}`,(data,status)=>{
+     $.get(`https://pokeapi.co/api/v2/pokemon/${id}`,(data,status)=>{
       console.log('status:',status);
       console.log('data:',data);
       ServerActions.receivePokemon(data);
